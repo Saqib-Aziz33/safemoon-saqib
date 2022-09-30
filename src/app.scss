@@ -1,0 +1,63 @@
+$dark: #1b1f26;
+$dark-op-low: #0e121ac5;
+$cyan: #0fd7ca;
+
+body{
+    background-color: $dark;
+    color: #fff;
+}
+// scrollbar
+::-webkit-scrollbar {
+    width: 14px;
+    background-color: #292e38;
+}
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track-piece {
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.1);
+}
+
+// typed
+.typed-cursor{
+    color: $cyan;
+    font-weight: 100;
+}
+.typed-cursor.typed-cursor--blink{
+    color: $cyan;
+    font-weight: 100;
+}
+
+
+// components
+.comming-soon-section{
+    min-height: 100vh;
+    background-color: #14171c;
+    background-image: url('https://safemoon.com/_next/static/media/token.66f73762.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 200px 0;
+    position: relative;
+}
+.footer-links a{
+    color: #0fd7ca;
+    text-decoration: none;
+}
+// header
+.header{
+    transition: all 0.5s ease;
+}
+.header.active{
+    background-color: $dark-op-low;
+    backdrop-filter: blur(2px);
+}
+
+// utils
+.text-shadow{
+    text-shadow: 1px 1px 5px black
+}
+
+// overrides

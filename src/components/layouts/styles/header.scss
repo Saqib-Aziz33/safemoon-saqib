@@ -1,0 +1,26 @@
+$dark: #1b1f26;
+
+.nav-toggler{
+    width: 0;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-toggler{
+        width: auto;
+    }
+    .nav-list{
+        position: fixed;
+        height: 100vh;
+        background-color: $dark;
+        width: 300px;
+        top: 0;
+        left: -400px;
+        bottom: 0;
+        transition: all 0.5s linear;
+        flex-direction: column;
+    }
+    .nav-list.active{
+        left: 0;
+    }
+}
