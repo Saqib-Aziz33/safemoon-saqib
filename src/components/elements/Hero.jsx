@@ -1,7 +1,6 @@
 import bgVideo from "../../media/bg-video.mp4";
 import {FiAlertTriangle} from 'react-icons/fi'
 import {AiFillCopy} from 'react-icons/ai'
-import Typed from 'react-typed';
 import "./styles/hero.scss";
 
 const Hero = () => {
@@ -23,7 +22,7 @@ const Hero = () => {
             <section className="col-md-6 mb-5">
               <p className="mb-0 text-uppercase">Welcome to</p>
               <h1 className="display-3 text-uppercase fw-bold my-0">
-                <Typed strings={['SafeMoon']} typeSpeed={150} />
+                SafeMoon
               </h1>
               <p>Community-driven Innovation for Good</p>
               <div className="my-5 hero-btns">
