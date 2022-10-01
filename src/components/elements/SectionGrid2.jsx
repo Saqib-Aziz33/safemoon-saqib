@@ -5,7 +5,7 @@ const SectionGrid2 = (prop) => {
             <div className="col-lg-6 order-1">
                 <span className="badge mb-4" style={{backgroundColor: '#1d4142', color: '#0fd7ca'}}>{prop.badge}</span>
                 <h2>{prop.heading}</h2>
-                <div className="text-justify text-md-left">
+                <div style={{textAlign: 'justify'}}>
                   {prop.children}
                 </div>
             </div>

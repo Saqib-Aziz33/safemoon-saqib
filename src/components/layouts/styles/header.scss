@@ -1,13 +1,15 @@
 $dark: #1b1f26;
 
 .nav-toggler{
-    width: 0;
-    overflow: hidden;
+    display: none;
+}
+.close-nav{
+    display: none;
 }
 
 @media only screen and (max-width: 1000px) {
     .nav-toggler{
-        width: auto;
+        display: block;
     }
     .nav-list{
         position: fixed;
@@ -22,5 +24,9 @@ $dark: #1b1f26;
     }
     .nav-list.active{
         left: 0;
+    }
+
+    .close-nav{
+        display: block;
     }
 }
